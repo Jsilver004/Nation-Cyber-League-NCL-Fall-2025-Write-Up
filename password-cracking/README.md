@@ -34,7 +34,10 @@ Recover plaintext passwords from given password hashes using password-cracking t
 
  This significantly reduced the search space while allowing Hashcat to recover the passwords efficiently and quickly.
 
- (SS)
+ Using these, we can easily get the passwords!
+
+  ![VLAN Creation](screenshots/Hashcracked1.png)
+  ![VLAN Creation](screenshots/Hashcracked2.png)
 
 
  ### Challenge 2 - NTLM Dictionary Attack
