@@ -29,7 +29,7 @@ The packet capture was examined to determine which host was responding to DNS re
 
 ### Step 2 - Investigate DNS Queries
 
-After identifying the DNS server, DNS requests were reviewed for unusual or suspicious domains. One domain stood out from normal traffic and appeared to be associated with a potentially malicious software installation.
+After identifying the DNS server, DNS requests were reviewed for unusual or suspicious domains. One domain stood out from normal traffic and appeared to be associated with a potentially malicious software installation (Fleekdesk.io).
 
 ![VLAN Creation](screenshots/NetTraf2.png)
 
