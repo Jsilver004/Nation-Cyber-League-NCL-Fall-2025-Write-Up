@@ -18,7 +18,7 @@ Analyze captured network traffic to identify malicious infrastructure, DNS activ
 
 ## Methodology
 
-## Problem 1:
+## Problem 1: Suspicious Installation
 
 ### Step 1 - Identify the DNS Server
 
