@@ -22,33 +22,40 @@ Analyze structure network telemetry to identify indiators of compromise (IOCs), 
 
 ## Problem 1
 
-### Step 1 - Analyze Network Telemetry
+### Question 1: What is the name of the malicious image file?
 
-Network event data stored in JSON format was examined using the 'jq' command-line utility. Relevant fields were extracted to identify suspicious activity and reduce the amount of data requiring manual inspection.
+Using the JQ tool (awk for .json files) I was able to extract a gif file.
 
-(SS)
+![VLAN Creation](screenshots/MerchGif.png)
 
-### Step 2 - Identify Suspicious Files
+This was the suspicious file.
 
-Event records were filtered to locate files associated with potentially malicious activity. This helped identify artifacts that warranted further investigation.
+### Question 2: What was the Victim IP (most connected to IP)?
 
-(SS)
+Utilizing jq, sort (numerical order) and head (top 10), I was able to discover the top IP address victimized.
 
-### Step 3 - Investigate Network Connections
+![VLAN Creation](screenshots/VicIP.png)
 
-Connection records were analyzed to determine which external systems communicated most frequently with the victim host. Internal infrastructure was distinguished from external IP addresses to focus on the investigation on potential attacker-controlled systems. 
+Since 10.3.2.1 is an internal IP address, it can be excluded. The next candidate was 208.246.77.75, which was the victimized IP.
 
-(SS)
+### Question 3: What are the two Event Types utilized in the C2 Connection?
 
-### Step 4 - Identify Command-and-Control Infrastructure
+To determine this, I used the victimized IP (208.246.77.75) using select and searched for ".event_type"
 
-DNS, HTTP and TLS events were correlated to identify suspicious domains used during attacker communications. Network metadata was examined to determine the fully qualified domain name (FQDN) associated with the malicious activity
+![VLAN Creation](screenshots/EventTypes.png)
 
-### Step 5 - Inspect TLS Certificate Info
+The Two event types were flow and tls.
 
-TLS metadata was reviewed to extract certificate information associated with the suspicious domain. Certificate attributes provide valuable threat hunting and incident investigation
+### Question 4: What is the Fully Qualified Domain Name of the suspicious domain the attacker connected to?
 
-(SS)
+To find this, I entered the command: 
+
+\**(jq -r --arg ip "10.3.2.101" '
+  select(.src_ip==$ip and (.event_type=="dns" or .event_type=="tls" or .event_type=="http")) |
+  (.dns.rrname // .dns.qname // .http.host // .tls.sni // .tls.server_name // empty)
+' ~/Desktop/eve.json | sort -u)
+
+
 
 ## Findings
 - Identified suspicious files and network artifacts
