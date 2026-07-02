@@ -95,6 +95,7 @@ Searching for "Desktop" revealed the device name.
 
 ![VLAN Creation](screenshots/CompName.png)
 
+DESKTOP-R8Y9C01
 
  ## Takeaways
 - Process creation logs provide valuable insight into malware execution
