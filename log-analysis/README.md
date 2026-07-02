@@ -19,7 +19,7 @@ Investigate system logs to reconstruct attacker activity, identify malicious pro
 
 ## Methodology 
 
-## Problem 1
+## Problem Set 1
 
 ### Question 1: What bootstrap was installed?
 
@@ -89,25 +89,12 @@ Analyzing the security policies, we can see a configuration was made.
 
 We can spot a suspicious URL located after a command line entry.
 
-### Question 3: What is the computer name
+### Question 3: What is the computer name?
 
 Searching for "Desktop" revealed the device name.
 
 ![VLAN Creation](screenshots/CompName.png)
 
-
-
- ### Step 2 - Trace Process Execution
-
- Parent-child process relationships were examined to determine which executable launched after the initial bootstrap process. Following the execution chain provided insight into how the malware established itself on the system.
-
- ![VLAN Creation](screenshots/Bootstrapexe.png)
-
- ### Step 3 - Analyze System Modifications
-
- Powershell activity was reviewed to identify commands executed by the malware. Event logs revealed the creation of Windows Firewall rules. this indicates attempts to modify the host's security configurations.
-
- (SS)
 
  ## Takeaways
 - Process creation logs provide valuable insight into malware execution
