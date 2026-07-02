@@ -34,7 +34,7 @@ This was the suspicious file.
 
 Utilizing jq, sort (numerical order) and head (top 10), I was able to discover the top IP address victimized.
 
-![VLAN Creation](screenshots/VicIP.png)
+![VLAN Creation](screenshots/VictIP.png)
 
 Since 10.3.2.1 is an internal IP address, it can be excluded. The next candidate was 208.246.77.75, which was the victimized IP.
 
