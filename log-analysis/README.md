@@ -81,7 +81,13 @@ Utilizing the search feature ("User") I was able to find the name of the host
 
 >C:\Users\\*john*\Desktop.
 
+### Question 2: What was the link that allowed the Malware?
 
+Analyzing the security policies, we can see a configuration was made.
+
+![VLAN Creation](screenshots/MalLink.png)
+
+We can spot a suspicious URL located after a command line entry.
 
 
 
