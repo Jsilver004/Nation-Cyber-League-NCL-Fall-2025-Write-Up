@@ -35,6 +35,17 @@ By following the event log, we can demonstrate that the process "layer_agent_svc
 
 ![VLAN Creation](screenshots/LayerAgentSvc.png)
 
+### Question 3: Which Powershell cmdlet is used to create the agent's Firewall Rules?
+
+By using the word search feature ("Powershell"):
+
+![VLAN Creation](screenshots/NewNetFireWall.png)
+
+We can see the service "New-NetFireWallRule" with the display name "Layer Agent Service", linking them together.
+
+
+
+
 
  ### Step 2 - Trace Process Execution
 
