@@ -79,7 +79,7 @@ Utilizing the search feature ("User") I was able to find the name of the host
 
 ![VLAN Creation](screenshots/ProcID.png)
 
->C:\Users\**john**\Desktop.
+>C:\Users\*john*\Desktop.
 
 
 
