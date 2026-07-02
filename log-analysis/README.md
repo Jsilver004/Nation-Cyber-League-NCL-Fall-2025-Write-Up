@@ -43,9 +43,13 @@ By using the word search feature ("Powershell"):
 
 We can see the service "New-NetFireWallRule" with the display name "Layer Agent Service", linking them together.
 
+### Question 4: Which program is executed to verify the Main Agent is running?
 
+Scrolling the log, we can see task manager (Taskmgr.exe) being ran after the bootstrap, which would be a program capable for monitoring if the Main Agent was running.
 
+![VLAN Creation](screenshots/Taskmgr.png)
 
+### Question 5:
 
  ### Step 2 - Trace Process Execution
 
