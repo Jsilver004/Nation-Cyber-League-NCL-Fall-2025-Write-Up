@@ -25,7 +25,7 @@ Investigate system logs to reconstruct attacker activity, identify malicious pro
 
 The investigation began by locating the executable downloaded by the user's web browser. Process creation events were reviewed to identify the bootstrap executable responsible for initiating the malware installation.
 
-![VLAN Creation](../screenshots/Bootstrapexe.png)
+![VLAN Creation](screenshots/Bootstrapexe.png)
 
  ### Step 2 - Trace Process Execution
 
