@@ -21,11 +21,11 @@ Investigate system logs to reconstruct attacker activity, identify malicious pro
 
 ## Problem 1
 
-### Step 1 - Identify the Initial Malware Execution 
+### Question 1: What boostrap was installed?
 
 The investigation began by locating the executable downloaded by the user's web browser. Process creation events were reviewed to identify the bootstrap executable responsible for initiating the malware installation.
 
- (SS)
+![VLAN Creation](../screenshots/Images/Bootstrapexe.png)
 
  ### Step 2 - Trace Process Execution
 
