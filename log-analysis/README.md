@@ -51,10 +51,27 @@ Scrolling the log, we can see task manager (Taskmgr.exe) being ran after the boo
 
 ### Question 5: What was the process ID of the executable used to re-enable Windows Defender?
 
-Utilizing word seach ("Defender") Shows the process of Windows Defender as 1704, after the executable, fitting the timeline.
+Utilizing word seach ("Defender") Shows the process of Windows Defender as 1704.
 
 ![VLAN Creation](screenshots/ProcID.png)
 
+This was enabled after the executable, fitting the timeline.
+
+### Question 6: How many seconds after the last firewall rule was created was Defender Re-enabled?
+
+To solve this, we need to find the Firewalls latest creation time, then subtract it from the Re-Enabled Microsoft Defender time.
+
+![VLAN Creation](screenshots/Time1.png)
+
+Last Firewall rule was recorded at 09:02:13.
+
+![VLAN Creation](screenshots/Tim2.png)
+
+Microsoft Defender was re-enabled at 09:02:59.
+
+Therefore the time ellapsed was 46 seconds (59-13=46).
+
+## Problem Set 2
 
  ### Step 2 - Trace Process Execution
 
