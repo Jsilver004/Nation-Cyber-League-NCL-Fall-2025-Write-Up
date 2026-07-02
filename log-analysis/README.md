@@ -49,7 +49,8 @@ Scrolling the log, we can see task manager (Taskmgr.exe) being ran after the boo
 
 ![VLAN Creation](screenshots/Taskmgr.png)
 
-### Question 5:
+### Question 5: What was the process ID of the execuable used to re-enable Windows Defender?
+
 
  ### Step 2 - Trace Process Execution
 
