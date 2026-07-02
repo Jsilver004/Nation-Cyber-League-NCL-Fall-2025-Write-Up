@@ -73,6 +73,20 @@ Therefore the time ellapsed was 46 seconds (59-13=46).
 
 ## Problem Set 2
 
+### Question 1: What is the hostname?
+
+Utilizing the search feature ("User") I was able to find the name of the host
+
+![VLAN Creation](screenshots/ProcID.png)
+
+>C:\Users\**john**\Desktop.
+
+
+
+
+
+
+
  ### Step 2 - Trace Process Execution
 
  Parent-child process relationships were examined to determine which executable launched after the initial bootstrap process. Following the execution chain provided insight into how the malware established itself on the system.
