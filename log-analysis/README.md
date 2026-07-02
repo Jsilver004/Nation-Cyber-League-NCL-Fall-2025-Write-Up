@@ -77,7 +77,7 @@ Therefore the time ellapsed was 46 seconds (59-13=46).
 
 Utilizing the search feature ("User") I was able to find the name of the host
 
-![VLAN Creation](screenshots/ProcID.png)
+![VLAN Creation](screenshots/Hostname.png)
 
 >C:\Users\\*john*\Desktop.
 
@@ -89,7 +89,11 @@ Analyzing the security policies, we can see a configuration was made.
 
 We can spot a suspicious URL located after a command line entry.
 
+### Question 3: What is the computer name
 
+Searching for "Desktop" revealed the device name.
+
+![VLAN Creation](screenshots/CompName.png)
 
 
 
