@@ -49,7 +49,11 @@ Scrolling the log, we can see task manager (Taskmgr.exe) being ran after the boo
 
 ![VLAN Creation](screenshots/Taskmgr.png)
 
-### Question 5: What was the process ID of the execuable used to re-enable Windows Defender?
+### Question 5: What was the process ID of the executable used to re-enable Windows Defender?
+
+Utilizing word seach ("Defender") Shows the process of Windows Defender as 1704, after the executable, fitting the timeline.
+
+![VLAN Creation](screenshots/ProcID.png)
 
 
  ### Step 2 - Trace Process Execution
